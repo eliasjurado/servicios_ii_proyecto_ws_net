@@ -1,15 +1,23 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
 
 namespace techstore_ws.Models
 {
-    public class Producto
+    public partial class Producto
     {
-        [Key]
-        public int idProducto { get; set; }
-        public string desProducto { get; set; }
-        public int idCategoria { get; set; }
-        public decimal precioProducto { get; set; }
-        public int stock_act { get; set; }
-        public int stock_min { get; set; }
+        public Producto()
+        {
+            CompraDetalle = new HashSet<CompraDetalle>();
+        }
+
+        public int IdProducto { get; set; }
+        public string DesProducto { get; set; }
+        public int IdCategoria { get; set; }
+        public decimal PrecioProducto { get; set; }
+        public int StockAct { get; set; }
+        public int StockMin { get; set; }
+
+        public virtual Categoria IdCategoriaNavigation { get; set; }
+        public virtual ICollection<CompraDetalle> CompraDetalle { get; set; }
     }
 }

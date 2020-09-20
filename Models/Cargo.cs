@@ -1,11 +1,18 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
 
 namespace techstore_ws.Models
 {
-    public class Cargo
+    public partial class Cargo
     {
-        [Key]
-        public int idCargo { get; set; }
-        public string nomCargo { get; set; }
+        public Cargo()
+        {
+            Empleado = new HashSet<Empleado>();
+        }
+
+        public int IdCargo { get; set; }
+        public string NomCargo { get; set; }
+
+        public virtual ICollection<Empleado> Empleado { get; set; }
     }
 }

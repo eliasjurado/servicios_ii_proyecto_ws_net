@@ -1,11 +1,18 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
 
 namespace techstore_ws.Models
 {
-    public class Categoria
+    public partial class Categoria
     {
-        [Key]
-        public int idCategoria { get; set; }
-        public string nomCategoria { get; set; }
+        public Categoria()
+        {
+            Producto = new HashSet<Producto>();
+        }
+
+        public int IdCategoria { get; set; }
+        public string NomCategoria { get; set; }
+
+        public virtual ICollection<Producto> Producto { get; set; }
     }
 }

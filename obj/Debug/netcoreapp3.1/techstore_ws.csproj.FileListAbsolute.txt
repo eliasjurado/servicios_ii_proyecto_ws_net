@@ -59,3 +59,9 @@
 /home/ridimdev/Projects/NetCore/techstore_ws/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /home/ridimdev/Projects/NetCore/techstore_ws/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /home/ridimdev/Projects/NetCore/techstore_ws/obj/Debug/netcoreapp3.1/techstore_ws.csproj.CopyComplete
+/home/ridimdev/Projects/NetCore/techstore_ws/bin/Debug/netcoreapp3.1/publish/web.config
+/home/ridimdev/Projects/NetCore/techstore_ws/bin/Debug/netcoreapp3.1/publish/appsettings.Development.json
+/home/ridimdev/Projects/NetCore/techstore_ws/bin/Debug/netcoreapp3.1/publish/appsettings.json
+/home/ridimdev/Projects/NetCore/techstore_ws/bin/Debug/netcoreapp3.1/publish/techstore_ws.deps.json
+/home/ridimdev/Projects/NetCore/techstore_ws/bin/Debug/netcoreapp3.1/publish/techstore_ws.runtimeconfig.json
+/home/ridimdev/Projects/NetCore/techstore_ws/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll

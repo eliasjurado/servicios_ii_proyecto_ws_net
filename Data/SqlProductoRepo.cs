@@ -18,7 +18,7 @@ namespace techstore_ws.Data
         }
         public Producto GetProductoById(int id)
         {
-            return _context.Producto.FirstOrDefault(p => p.idProducto == id);
+            return _context.Producto.FirstOrDefault(p => p.IdProducto == id);
         }
     }
 }

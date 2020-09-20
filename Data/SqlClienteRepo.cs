@@ -19,7 +19,7 @@ namespace techstore_ws.Data
 
         public Cliente GetClienteById(int id)
         {
-            return _context.Cliente.FirstOrDefault(p => p.idCliente == id);
+            return _context.Cliente.FirstOrDefault(p => p.IdCliente == id);
         }
     }
 }

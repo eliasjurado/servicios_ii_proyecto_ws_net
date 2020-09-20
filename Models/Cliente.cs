@@ -1,19 +1,28 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
 
 namespace techstore_ws.Models
 {
-    public class Cliente
+    public partial class Cliente
     {
-        [Key]
-        public int idCliente { get; set; }
-        public string nomCliente { get; set; }
-        public string apeCliente { get; set; }
-        public string dniCliente { get; set; }
-        public string tlfCliente { get; set; }
-        public string direcCliente { get; set; }
-        public int idDistrito { get; set; }
-        public string emailCliente { get; set; }
-        public string passCliente { get; set; }
-        public int idTipoUsuario { get; set; }
+        public Cliente()
+        {
+            CompraCabecera = new HashSet<CompraCabecera>();
+        }
+
+        public int IdCliente { get; set; }
+        public string NomCliente { get; set; }
+        public string ApeCliente { get; set; }
+        public string DniCliente { get; set; }
+        public string TlfCliente { get; set; }
+        public string DirecCliente { get; set; }
+        public int IdDistrito { get; set; }
+        public string EmailCliente { get; set; }
+        public string PassCliente { get; set; }
+        public int IdTipoUsuario { get; set; }
+
+        public virtual Distrito IdDistritoNavigation { get; set; }
+        public virtual TipoUsuario IdTipoUsuarioNavigation { get; set; }
+        public virtual ICollection<CompraCabecera> CompraCabecera { get; set; }
     }
 }
