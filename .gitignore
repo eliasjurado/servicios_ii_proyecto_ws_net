@@ -376,3 +376,4 @@ MigrationBackup/
 .ionide/
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp
+obj/Release/netcoreapp3.1/techstore_ws.pdb

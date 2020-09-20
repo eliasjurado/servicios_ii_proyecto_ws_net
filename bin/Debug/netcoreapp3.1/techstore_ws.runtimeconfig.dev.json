@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "/home/ridimdev/.dotnet/store/|arch|/|tfm|",
-      "/home/ridimdev/.nuget/packages"
-    ]
-  }
-}
